@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph.xml"
+    app:startDestination="@id/action_beranda">
+
+    <fragment
+        android:id="@+id/action_beranda"
+        android:name="com.example.flip.home.HomeFragment"
+        android:label="fragment_home"
+        tools:layout="@layout/fragment_home" />
+    <fragment
+        android:id="@+id/action_transaksi"
+        android:name="com.example.flip.transaksi.RiwayatTransaksiFragment"
+        android:label="fragment_riwayat_transaksi"
+        tools:layout="@layout/fragment_riwayat_transaksi" />
+    <dialog
+        android:id="@+id/action_transfer"
+        android:name="com.example.flip.transfer.TransferBottomSheetFragment"
+        android:label="fragment_transaksi_bottom_sheet"
+        tools:layout="@layout/fragment_transfer" />
+    <fragment
+        android:id="@+id/action_promo"
+        android:name="com.example.flip.promo.PromoFragment"
+        android:label="fragment_promo"
+        tools:layout="@layout/fragment_promo" />
+    <fragment
+        android:id="@+id/action_bantuan"
+        android:name="com.example.flip.bantuan.BantuanFragment"
+        android:label="fragment_bantuan"
+        tools:layout="@layout/fragment_bantuan" />
+</navigation>

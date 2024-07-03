@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/white"
+    android:fillViewport="true"
+    tools:context=".bantuan.BantuanFragment">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="52dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Pusat Bantuan"
+            android:id="@+id/title"
+            android:textColor="#504848"
+            android:layout_marginTop="22dp"
+            android:layout_marginStart="8dp"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            android:fontFamily="@font/inter_bold"
+            android:textSize="16sp" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:background="#E6FD6008"
+            android:paddingHorizontal="12dp"
+            android:paddingTop="12dp"
+            android:paddingBottom="36dp"
+            android:id="@+id/rl_search"
+            app:layout_constraintTop_toBottomOf="@id/title">
+
+            <ImageView
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:src="@drawable/image_cat"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentTop="true" />
+            
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Halo Pemirsa,\nAda Yang Bisa Dibantu?"
+                android:fontFamily="@font/inter_bold"
+                android:textColor="@color/white"
+                android:id="@+id/textView"
+                android:textSize="20sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text="Kamu bisa cari dan baca topik yang ingin ditanyakan"
+                android:layout_below="@id/textView"
+                android:fontFamily="@font/inter_medium"
+                android:textSize="11sp"
+                android:id="@+id/textView2"
+                android:textColor="@color/white" />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bg_rounded_f6f2f2_10dp"
+                android:layout_marginTop="12dp"
+                android:layout_below="@id/textView2"
+                android:hint="Coba cari “cara transfer”"
+                android:padding="14dp"
+                android:fontFamily="@font/inter"
+                android:textSize="16sp"
+                android:drawableStart="@drawable/ic_search"
+                android:drawablePadding="10dp"
+                android:textColor="#9B9595" />
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg_rounded_top_white_18dp"
+            app:layout_constraintTop_toBottomOf="@id/rl_search"
+            android:paddingHorizontal="14dp"
+            android:paddingVertical="18dp"
+            android:layout_marginTop="-20dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Topik paling dicari"
+                android:fontFamily="@font/inter_bold"
+                android:textSize="16sp"
+                android:textColor="#504848" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="24dp"
+                android:fontFamily="@font/rocknroll_one"
+                android:textSize="12sp"
+                android:textColor="#7E6363"
+                android:drawableEnd="@drawable/ic_arrow_right"
+                android:text="Apa yang harus saya lakukan jika saya membatalkan transaksi tagihan listrik ke Flip?" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:fontFamily="@font/rocknroll_one"
+                android:textSize="12sp"
+                android:textColor="#7E6363"
+                android:drawableEnd="@drawable/ic_arrow_right"
+                android:text="Bagaimana jika transaksi pulsa sudah saya batalkan, tapi sudah transfer ke Flip?" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:fontFamily="@font/rocknroll_one"
+                android:textSize="12sp"
+                android:textColor="#7E6363"
+                android:drawableEnd="@drawable/ic_arrow_right"
+                android:text="Bagaimana jika transaksi paket data sudah saya batalkan, tapi sudah transfer ke Flip?" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:fontFamily="@font/rocknroll_one"
+                android:textSize="12sp"
+                android:textColor="#7E6363"
+                android:drawableEnd="@drawable/ic_arrow_right"
+                android:text="Apa yang harus dilakukan jika transaksi saya dibatalkan oleh Flip?" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:fontFamily="@font/rocknroll_one"
+                android:textSize="12sp"
+                android:textColor="#7E6363"
+                android:drawableEnd="@drawable/ic_arrow_right"
+                android:text="What causes my Flip Globe transaction to be cenceled by Flip?" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:fontFamily="@font/rocknroll_one"
+                android:textSize="12sp"
+                android:textColor="#7E6363"
+                android:drawableEnd="@drawable/ic_arrow_right"
+                android:text="Kenapa transaksi saya dibatalkan oleh flip ?" />
+        </LinearLayout>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>

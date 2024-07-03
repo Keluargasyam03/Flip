@@ -1,0 +1,554 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:fillViewport="true"
+    tools:context=".home.HomeFragment">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:paddingBottom="56dp"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:layout_width="35dp"
+            android:layout_height="33dp"
+            android:src="@drawable/ic_user"
+            android:layout_marginTop="30dp"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            android:id="@+id/iv_user"
+            android:layout_marginStart="24dp" />
+
+        <ImageView
+            android:layout_width="36dp"
+            android:layout_height="35dp"
+            android:src="@drawable/ic_bell"
+            android:layout_marginEnd="30dp"
+            app:layout_constraintTop_toTopOf="@id/iv_user"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:id="@+id/iv_bell"
+            android:layout_marginStart="24dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/inter"
+            android:textSize="12sp"
+            android:text="Saldo"
+            app:layout_constraintStart_toStartOf="@id/iv_user"
+            app:layout_constraintTop_toBottomOf="@id/iv_user"
+            android:layout_marginTop="43dp"
+            android:id="@+id/saldo"
+            android:layout_marginStart="10dp"
+            android:textColor="@color/black" />
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="0dp"
+            android:id="@+id/divider"
+            app:layout_constraintTop_toTopOf="@id/saldo"
+            app:layout_constraintBottom_toBottomOf="@id/saldo"
+            app:layout_constraintStart_toEndOf="@id/saldo"
+            android:layout_marginStart="8dp"
+            android:background="#21000000" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toTopOf="@id/divider"
+            app:layout_constraintStart_toEndOf="@id/divider"
+            android:textSize="13sp"
+            android:includeFontPadding="false"
+            android:textColor="#6E000000"
+            android:id="@+id/duta"
+            android:layout_marginTop="-2dp"
+            android:layout_marginStart="8dp"
+            android:text="duta" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toTopOf="@id/divider"
+            app:layout_constraintStart_toEndOf="@id/duta"
+            android:textSize="13sp"
+            android:includeFontPadding="false"
+            android:textColor="#EF6F12"
+            android:id="@+id/money"
+            android:layout_marginTop="-2dp"
+            android:text="money" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/inter_bold"
+            android:textColor="@color/black"
+            android:textSize="14sp"
+            android:id="@+id/rp0"
+            app:layout_constraintTop_toBottomOf="@id/saldo"
+            app:layout_constraintStart_toStartOf="@id/saldo"
+            android:layout_marginTop="8dp"
+            android:text="Rp0" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toEndOf="@id/rp0"
+            android:layout_marginStart="10dp"
+            app:layout_constraintBottom_toBottomOf="@id/rp0"
+            app:layout_constraintTop_toTopOf="@id/rp0"
+            android:src="@drawable/ic_password_toggle" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Koin Flip 0"
+            app:layout_constraintTop_toBottomOf="@id/rp0"
+            app:layout_constraintStart_toStartOf="@id/rp0"
+            android:layout_marginTop="10dp"
+            android:id="@+id/koin_flip"
+            android:fontFamily="@font/inter_medium"
+            android:textColor="@color/black"
+            android:textSize="12sp" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_exclamation"
+            app:layout_constraintStart_toEndOf="@id/koin_flip"
+            app:layout_constraintTop_toTopOf="@id/koin_flip"
+            app:layout_constraintBottom_toBottomOf="@id/koin_flip"
+            android:layout_marginStart="10dp" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_qris"
+            app:layout_constraintTop_toTopOf="@id/saldo"
+            app:layout_constraintBottom_toBottomOf="@id/koin_flip"
+            app:layout_constraintEnd_toEndOf="@id/iv_bell"
+            android:layout_marginEnd="20dp"
+            android:id="@+id/iv_qris" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="QRIS"
+            app:layout_constraintStart_toStartOf="@id/iv_qris"
+            app:layout_constraintEnd_toEndOf="@id/iv_qris"
+            android:layout_marginTop="12dp"
+            android:textColor="#F24E1E"
+            android:id="@+id/qris"
+            android:fontFamily="@font/inter_bold"
+            android:textSize="12sp"
+            app:layout_constraintTop_toBottomOf="@id/iv_qris" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Top Up"
+            android:id="@+id/top_up"
+            android:layout_marginEnd="20dp"
+            android:textColor="#F24E1E"
+            app:layout_constraintTop_toTopOf="@id/qris"
+            app:layout_constraintBottom_toBottomOf="@id/qris"
+            app:layout_constraintEnd_toStartOf="@id/qris"
+            android:fontFamily="@font/inter_bold"
+            android:textSize="12sp" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_top_up"
+            app:layout_constraintBottom_toBottomOf="@id/iv_qris"
+            app:layout_constraintStart_toStartOf="@id/top_up"
+            app:layout_constraintEnd_toEndOf="@id/top_up"
+            app:layout_constraintTop_toTopOf="@id/iv_qris" />
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="100dp"
+            app:layout_constraintEnd_toStartOf="@id/top_up"
+            android:layout_marginEnd="24dp"
+            app:layout_constraintTop_toTopOf="@id/saldo"
+            app:layout_constraintBottom_toBottomOf="@id/koin_flip"
+            android:background="#38000000" />
+
+        <GridLayout
+            android:id="@+id/grid"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintEnd_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginTop="44dp"
+            android:columnCount="4"
+            android:layout_marginHorizontal="30dp"
+            app:layout_constraintTop_toBottomOf="@id/koin_flip">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_columnWeight="1"
+                android:gravity="center"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="38dp"
+                    android:layout_height="38dp"
+                    android:src="@drawable/ic_e_wallet" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/inter_light"
+                    android:text="E-wallet"
+                    android:layout_marginTop="4dp"
+                    android:textColor="@color/black"
+                    android:textSize="12sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_columnWeight="1"
+                android:gravity="center"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="38dp"
+                    android:layout_height="38dp"
+                    android:src="@drawable/ic_flip_globe" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/inter_light"
+                    android:text="Flip Globe"
+                    android:layout_marginTop="4dp"
+                    android:textColor="@color/black"
+                    android:textSize="12sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_columnWeight="1"
+                android:gravity="center"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="38dp"
+                    android:layout_height="38dp"
+                    android:src="@drawable/ic_topup_tagihan" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/inter_light"
+                    android:text="Topup &amp;\nTagihan"
+                    android:layout_marginTop="4dp"
+                    android:textColor="@color/black"
+                    android:textSize="12sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_columnWeight="1"
+                android:gravity="center"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="38dp"
+                    android:layout_height="38dp"
+                    android:src="@drawable/ic_pulsa" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/inter_light"
+                    android:text="Pulsa"
+                    android:layout_marginTop="4dp"
+                    android:textColor="@color/black"
+                    android:textSize="12sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_columnWeight="1"
+                android:gravity="center"
+                android:layout_marginTop="52dp"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="38dp"
+                    android:layout_height="38dp"
+                    android:src="@drawable/ic_token" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/inter_light"
+                    android:text="Token Listrik"
+                    android:layout_marginTop="4dp"
+                    android:textColor="@color/black"
+                    android:textSize="12sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_columnWeight="1"
+                android:gravity="center"
+                android:layout_marginTop="52dp"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="38dp"
+                    android:layout_height="38dp"
+                    android:src="@drawable/ic_langganan" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/inter_light"
+                    android:text="Langganan"
+                    android:layout_marginTop="4dp"
+                    android:textColor="@color/black"
+                    android:textSize="12sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_columnWeight="1"
+                android:gravity="center"
+                android:layout_marginTop="52dp"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="38dp"
+                    android:layout_height="38dp"
+                    android:src="@drawable/ic_paket_data" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/inter_light"
+                    android:text="Paket Data"
+                    android:layout_marginTop="4dp"
+                    android:textColor="@color/black"
+                    android:textSize="12sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_columnWeight="1"
+                android:gravity="center"
+                android:layout_marginTop="52dp"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="38dp"
+                    android:layout_height="38dp"
+                    android:src="@drawable/ic_semua_produk" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/inter_light"
+                    android:text="Semua\nProduk"
+                    android:layout_marginTop="4dp"
+                    android:textColor="@color/black"
+                    android:textSize="12sp" />
+            </LinearLayout>
+        </GridLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Aksi Cepat"
+            android:layout_marginTop="62dp"
+            app:layout_constraintTop_toBottomOf="@id/grid"
+            app:layout_constraintStart_toStartOf="@id/iv_user"
+            android:fontFamily="@font/inter_bold"
+            android:textSize="14sp"
+            android:id="@+id/aksi_cepat"
+            android:textColor="@color/black" />
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingVertical="4dp"
+            android:id="@+id/aksi_1"
+            android:layout_marginTop="24dp"
+            android:paddingHorizontal="10dp"
+            android:background="@drawable/bg_rounded_d9d9d9_30dp"
+            app:layout_constraintTop_toBottomOf="@id/aksi_cepat"
+            app:layout_constraintStart_toStartOf="@id/aksi_cepat">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_tri"
+                android:id="@+id/iv_tri" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_toEndOf="@id/iv_tri"
+                android:textSize="12sp"
+                android:textColor="#000000"
+                android:id="@+id/isi_pulsa"
+                android:fontFamily="@font/inter_extralight"
+                android:text="Isi Pulsa" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_toEndOf="@id/iv_tri"
+                android:layout_below="@id/isi_pulsa"
+                android:textSize="12sp"
+                android:textColor="#000000"
+                android:fontFamily="@font/inter_bold"
+                android:text="082168753459" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingVertical="4dp"
+            android:id="@+id/aksi_2"
+            android:paddingHorizontal="10dp"
+            app:layout_constraintTop_toTopOf="@id/aksi_1"
+            app:layout_constraintBottom_toBottomOf="@id/aksi_1"
+            app:layout_constraintStart_toEndOf="@id/aksi_1"
+            android:layout_marginStart="10dp"
+            android:background="@drawable/bg_rounded_d9d9d9_30dp">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_user"
+                android:id="@+id/ic_user1"
+                app:tint="#D9D9D9" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_toEndOf="@id/ic_user1"
+                android:textSize="12sp"
+                android:textColor="#000000"
+                android:id="@+id/topup_spay"
+                android:fontFamily="@font/inter_extralight"
+                android:text="Topup ShopeePay" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_toEndOf="@id/ic_user1"
+                android:layout_below="@id/topup_spay"
+                android:textSize="12sp"
+                android:textColor="#000000"
+                android:fontFamily="@font/inter_bold"
+                android:text="082168753459" />
+        </RelativeLayout>
+
+        <com.google.android.material.card.MaterialCardView
+            android:layout_width="wrap_content"
+            app:layout_constraintTop_toBottomOf="@id/aksi_1"
+            android:layout_marginTop="25dp"
+            app:layout_constraintStart_toStartOf="@id/aksi_1"
+            app:cardCornerRadius="12dp"
+            app:cardElevation="0dp"
+            android:id="@+id/card_1"
+            app:cardBackgroundColor="#47D9D9D9"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="8dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="11sp"
+                    android:textColor="@color/black"
+                    android:fontFamily="@font/istok_web_bold"
+                    android:text="Transfer pertama kali\nkemana aja pake Flip" />
+
+                <ImageView
+                    android:layout_width="42dp"
+                    android:layout_height="39dp"
+                    android:layout_marginTop="4dp"
+                    android:layout_marginStart="10dp"
+                    android:src="@drawable/image_card_1" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="11sp"
+                    android:textColor="@color/black"
+                    android:fontFamily="@font/istok_web_bold"
+                    android:text="Coba hematnya transaksi\nbebas biaya admin di Flip" />
+            </LinearLayout>
+        </com.google.android.material.card.MaterialCardView>
+
+        <com.google.android.material.card.MaterialCardView
+            android:layout_width="150dp"
+            app:layout_constraintTop_toBottomOf="@id/aksi_1"
+            android:layout_marginTop="25dp"
+            android:layout_marginStart="24dp"
+            app:cardCornerRadius="12dp"
+            app:cardElevation="0dp"
+            app:layout_constraintBottom_toBottomOf="@id/card_1"
+            app:layout_constraintStart_toEndOf="@id/card_1"
+            app:cardBackgroundColor="#47D9D9D9"
+            android:layout_height="0dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="8dp"
+                android:gravity="center"
+                android:layout_gravity="center"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="11sp"
+                    android:textColor="@color/black"
+                    android:textAlignment="center"
+                    android:fontFamily="@font/istok_web_bold"
+                    android:text="Transaksi Terakhir" />
+
+                <ImageView
+                    android:layout_width="42dp"
+                    android:layout_height="39dp"
+                    android:layout_marginTop="4dp"
+                    android:layout_gravity="center"
+                    android:src="@drawable/image_card_2" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="11sp"
+                    android:textAlignment="center"
+                    android:textColor="@color/black"
+                    android:fontFamily="@font/istok_web_bold"
+                    android:text="topup\nRp.100.0" />
+            </LinearLayout>
+        </com.google.android.material.card.MaterialCardView>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>

@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingHorizontal="14dp"
+    android:orientation="vertical"
+    android:background="@color/white"
+    android:paddingBottom="32dp"
+    tools:context=".transfer.TransferBottomSheetFragment">
+
+    <View
+        android:layout_width="42dp"
+        android:layout_height="2dp"
+        android:background="#545454"
+        android:layout_marginTop="12dp"
+        android:layout_gravity="center" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Pilih Opsi Transfer"
+        android:layout_marginTop="22dp"
+        android:fontFamily="@font/inter_bold"
+        android:textSize="16sp"
+        android:textColor="@color/black" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bg_rounded_f5f5f5_15dp"
+        android:paddingHorizontal="18dp"
+        android:paddingVertical="22dp"
+        android:layout_marginTop="8dp">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_wallet"
+            android:id="@+id/iv_wallet" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_toEndOf="@id/iv_wallet"
+            android:text="Saldo di Flip"
+            android:id="@+id/tv_saldo_flip"
+            android:fontFamily="@font/inter_bold"
+            android:textSize="14sp"
+            android:textColor="@color/black"
+            android:layout_marginStart="16dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_saldo_flip"
+            android:layout_toEndOf="@id/iv_wallet"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="4dp"
+            android:text="Transfer ke sesama akun Flip"
+            android:fontFamily="@font/inter_light"
+            android:textSize="12sp"
+            android:textColor="@color/black" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bg_rounded_f5f5f5_15dp"
+        android:paddingHorizontal="18dp"
+        android:paddingVertical="22dp"
+        android:layout_marginTop="14dp">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_rekening_bank"
+            android:id="@+id/iv_rekening" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_toEndOf="@id/iv_rekening"
+            android:text="Rekening Bank"
+            android:id="@+id/tv_rekening"
+            android:fontFamily="@font/inter_bold"
+            android:textSize="14sp"
+            android:textColor="@color/black"
+            android:layout_marginStart="16dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="4dp"
+            android:layout_below="@id/tv_rekening"
+            android:layout_toEndOf="@id/iv_rekening"
+            android:layout_marginStart="16dp">
+
+            <ImageView
+                android:layout_width="26dp"
+                android:layout_height="26dp"
+                android:src="@drawable/bank_mandiri" />
+
+            <ImageView
+                android:layout_width="54dp"
+                android:layout_height="26dp"
+                android:layout_marginStart="4dp"
+                android:src="@drawable/bank_btn" />
+
+            <ImageView
+                android:layout_width="26dp"
+                android:layout_height="26dp"
+                android:layout_marginStart="4dp"
+                android:src="@drawable/bank_bca" />
+
+            <ImageView
+                android:layout_width="26dp"
+                android:layout_height="26dp"
+                android:layout_marginStart="4dp"
+                android:src="@drawable/bank_bsi" />
+        </LinearLayout>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bg_rounded_f5f5f5_15dp"
+        android:paddingHorizontal="18dp"
+        android:paddingVertical="22dp"
+        android:layout_marginTop="14dp">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_banyak_rekening"
+            android:id="@+id/iv_banyak" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_toEndOf="@id/iv_banyak"
+            android:text="Banyak Rekening"
+            android:id="@+id/tv_banyak"
+            android:fontFamily="@font/inter_bold"
+            android:textSize="14sp"
+            android:textColor="@color/black"
+            android:layout_marginStart="16dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="4dp"
+            android:layout_below="@id/tv_banyak"
+            android:layout_toEndOf="@id/iv_banyak"
+            android:layout_marginStart="16dp">
+
+            <ImageView
+                android:layout_width="26dp"
+                android:layout_height="26dp"
+                android:src="@drawable/bank_mandiri" />
+
+            <ImageView
+                android:layout_width="54dp"
+                android:layout_height="26dp"
+                android:layout_marginStart="4dp"
+                android:src="@drawable/bank_btn" />
+
+            <ImageView
+                android:layout_width="26dp"
+                android:layout_height="26dp"
+                android:layout_marginStart="4dp"
+                android:src="@drawable/bank_bca" />
+
+            <ImageView
+                android:layout_width="26dp"
+                android:layout_height="26dp"
+                android:layout_marginStart="4dp"
+                android:src="@drawable/bank_bsi" />
+        </LinearLayout>
+    </RelativeLayout>
+</LinearLayout>

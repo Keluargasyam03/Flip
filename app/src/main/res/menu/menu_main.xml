@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/action_beranda"
+        android:icon="@drawable/ic_home"
+        android:title="Beranda" />
+    <item
+        android:id="@+id/action_transaksi"
+        android:icon="@drawable/ic_transaction"
+        android:title="Transaksi" />
+    <item
+        android:id="@+id/action_transfer"
+        android:icon="@null"
+        android:title="Transfer" />
+    <item
+        android:id="@+id/action_promo"
+        android:icon="@drawable/ic_gift"
+        android:title="Promo" />
+    <item
+        android:id="@+id/action_bantuan"
+        android:icon="@drawable/ic_question"
+        android:title="Bantuan" />
+</menu>
